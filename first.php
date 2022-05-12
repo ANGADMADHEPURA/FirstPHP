@@ -9,8 +9,7 @@
 <body>
     <h1>My first PHP web page</h1>
     <?php
-
-    echo "Hello World";
+    echo "Hello world";
     ?>
 </body>
 </html>

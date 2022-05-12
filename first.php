@@ -47,6 +47,13 @@
                 for ($x = 0; $x <= 100; $x+=10) {
                     echo "The number is a for loop: $x <br>";
                   }
+
+                  //Foreach loop in PHP
+                  echo "<br>";
+                  $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+                  foreach($age as $x => $val) {
+                  echo "$x = $val<br>";
+                              }
                   
                 // Example of do while loop
                 echo "<br>";
@@ -59,6 +66,7 @@
 
 
                 // Example of For Loop In PHP
+            
               
                   ?> 
 </body>

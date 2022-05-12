@@ -37,11 +37,19 @@
                 //    Example of Loop
                 echo  "<br>";
                 $var = 2;
-                while ($var  <=100) {
+                while ($var  <=30) {
                     echo "Number: $var <br>";
                     $var++;
                    
                 }
+                // Example of do while loop
+                echo "<br>";
+                $var1 = 1345;
+                do {
+                    echo "Number: $var1 <br>";
+                    $var1++;
+
+                } while ($var1 <= 2524)
     ?>
 </body>
 </html>

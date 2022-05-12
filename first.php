@@ -32,8 +32,16 @@
             break;
         default:
              echo "Invalid Input ";
+             echo "<br>";
     }
-
+                //    Example of Loop
+                echo  "<br>";
+                $var = 2;
+                while ($var  <=100) {
+                    echo "Number: $var <br>";
+                    $var++;
+                   
+                }
     ?>
 </body>
 </html>

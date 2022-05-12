@@ -42,6 +42,12 @@
                     $var++;
                    
                 }
+                // For loop
+                echo "<br>";
+                for ($x = 0; $x <= 100; $x+=10) {
+                    echo "The number is a for loop: $x <br>";
+                  }
+                  
                 // Example of do while loop
                 echo "<br>";
                 $var1 = 1345;
@@ -50,6 +56,10 @@
                     $var1++;
 
                 } while ($var1 <= 2524)
-    ?>
+
+
+                // Example of For Loop In PHP
+              
+                  ?> 
 </body>
 </html>

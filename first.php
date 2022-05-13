@@ -65,7 +65,7 @@
                 } while ($var1 <= 2524)
 
 
-                // Example of For Loop In PHP
+                // Example of For function In PHP
             
               
                   ?> 

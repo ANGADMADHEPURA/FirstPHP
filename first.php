@@ -42,6 +42,14 @@
                     $var++;
                    
                 }
+            
+                //Example of function in PHP
+                function name1(){
+                    for ($var2 = 1; $var2 <= 6; $var2++) {
+                        echo "angad: $var2  <br>";
+                    }
+                }
+
                 // For loop in PHP 
                 echo "<br>";
                 for ($x = 0; $x <= 100; $x+=10) {
@@ -66,11 +74,7 @@
 
 
                 // Example of For function In PHP
-            function name(){
-                for ($var2 = 1; $var2 <= 6; $var2++) {
-                    echo "Number: $var2 <br>";
-                }
-            }
+        
               
                   ?> 
 </body>

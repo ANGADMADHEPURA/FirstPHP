@@ -60,14 +60,14 @@
 
               //Example of function 2nd 
               function familyName($fname) {
-                echo "$fname Refsnes.<br>";
+                echo "$fname <br>";
               }
               
-              familyName("Jani");
-              familyName("Hege");
-              familyName("Stale");
-              familyName("Kai Jim");
-              familyName("Borge");
+              familyName("Angad mandal");
+              familyName("Kolkata");
+              familyName("Delhi");
+              familyName("Mumbai");
+              familyName("Patna");
 
 
                 // For loop in PHP 

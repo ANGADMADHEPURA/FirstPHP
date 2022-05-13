@@ -42,7 +42,7 @@
                     $var++;
                    
                 }
-                // For loop
+                // For loop in PHP 
                 echo "<br>";
                 for ($x = 0; $x <= 100; $x+=10) {
                     echo "The number is a for loop: $x <br>";

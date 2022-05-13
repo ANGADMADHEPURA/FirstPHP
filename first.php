@@ -66,7 +66,11 @@
 
 
                 // Example of For function In PHP
-            
+            function name(){
+                for ($var2 = 1; $var2 <= 6; $var2++) {
+                    echo "Number: $var2 <br>";
+                }
+            }
               
                   ?> 
 </body>

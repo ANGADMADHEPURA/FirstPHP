@@ -8,26 +8,20 @@
 </head>
 <body>
     <?php
-    class fruit {
-        public $name;
-        public $color;
-
-        function _construct($name, $color) {
-            $this ->name = $name;
-            $this ->color = $color;
-        }
-        function get_name() {
-            return $this -> name;
-
-        }
-         function get_color() {
-             return $this -> color;
-         }
-        }
-        $strawberry = new Fruit ("strawberry", "pink");
-        echo $strawberry -> get_name();
-        echo "<br>";
-        echo $strawberry ->  get_color();
+class Fruit {
+    public $name;
+    public $color;
+  
+    function __construct($name) {
+      $this->name = $name; 
+    }
+    function get_name() {
+      return $this->name;
+    }
+  }
+  
+  $apple = new Fruit("Apple");
+  echo $apple->get_name();
         
       ?>
       <h1>This is a constructor example of PHP</h1>

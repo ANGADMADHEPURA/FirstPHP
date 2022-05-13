@@ -32,17 +32,18 @@
             break;
         default:
              echo "Invalid Input ";
-             echo "<br>";
+            
     }
+    echo "<br>";
                 //    Example of Loop
                 echo  "<br>";
                 $var = 2;
-                while ($var  <=30) {
+                while ($var  <=10) {
                     echo "Number: $var <br>";
                     $var++;
                    
                 }
-            
+                 echo "<br>";
                 //Example of function in PHP
                 function name1(){
                     for ($var2 = 1; $var2 <= 6; $var2++) {

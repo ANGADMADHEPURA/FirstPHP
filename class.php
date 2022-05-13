@@ -7,6 +7,7 @@
     <title>i am learning php class</title>
 </head>
 <body>
+    <h1>The fruit Progress </h1>
     <?php
     class  fruit {
         public $name;

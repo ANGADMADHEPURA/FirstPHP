@@ -45,11 +45,23 @@
                 }
                  echo "<br>";
                 //Example of function in PHP
-                function name1(){
+                function name(){
                     for ($var2 = 1; $var2 <= 6; $var2++) {
                         echo "angad: $var2  <br>";
                     }
                 }
+
+              //Example of function 2nd 
+              function familyName($fname) {
+                echo "$fname Refsnes.<br>";
+              }
+              
+              familyName("Jani");
+              familyName("Hege");
+              familyName("Stale");
+              familyName("Kai Jim");
+              familyName("Borge");
+
 
                 // For loop in PHP 
                 echo "<br>";

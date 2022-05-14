@@ -1,20 +1,152 @@
+<?php 
+ include "db.php";
+include "login.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example of navbar & dropdown menu</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <ol>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Product</a></li>
-        <li><a href="#">Our Services</a></li>
-        <li><a href="#">Contacts</a></li>
-        <li><a href="#">Login/Sign Up</a></li>
+    <title>Login with PHP and Ajax</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <style>
+        /* SET OUR WIDTH AND HIGHT TO 100% FOR HTML AND BODY */
+html,
+body {
+    width:100%;
+    height:100%;
+}
 
-    </ol>
+/* SET BACKGROUND TO OUR IMAGE. */
+body {
+    background-image: url(bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+/* SET BACKGROUND TO OUR FORM WITH A DROP SHADOW AND SET OUR COLOR TO WHITE OUR BACKGROUND USES AN ALPHA CHANNEL HEX CODE TO GIVE US OPACITY.*/
+#form {
+    background:#18184c73;  /*CAN ALSO USE RGBA. EXAMPLE: background: rgba(24, 24, 76, .45); */
+    box-shadow:0px 5px 23px 0px #eae3e3;
+    color:#fff;
+   
+}
+
+#formContainer {
+    margin-top:100px;
+    text-align: center;
+}
+    </style>
+</head>
+
+<body>
+   
+<div class="container" id="formContainer">
+   <div class="row">
+       <div class="col-sm-12 col-md-6 col-lg-6" id="form">
+
+<!--LOGIN FORM-------------------------->          
+           <form method="post" action="" id="loginForm">
+               <div id="imgContainer">
+                   <img src="data:image/png;base64,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">
+                   <h2>Login</h2>
+               </div>
+
+               <div class="container">
+                  <div id="loginMsgs"></div>
+
+                      <div class="form-group">
+                          <label for="username">Username</label>
+                          <div id="error_username"></div>
+                          <input type="text" class="form-control" name="user[username]">
+                       </div>
+
+
+                      <div class="form-group">
+                          <label for="username">Password</label>
+                          <div id="error_password"></div>
+                          <input type="password" class="form-control" name="user[password]">
+                      </div>
+
+                      <div class="form-group">
+                          <button class="btn btn-primary" id="submit">Login</button>   
+                      </div>
+
+               </div>
+
+           </form>
+           
+           
+    <!--REGISTRATION FORM---------------------->
+
+           <form method="post" action="" id="registerForm">
+               <div id="imgContainer">
+                   <img src="/login-img.png">
+                   <h4>Let 's get your account setup</h4>
+               </div>
+
+               <div class="container">
+                  
+                   <div id="loading" class="alert alert-info alert-dismissable hide"> 
+                       <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                   </div>
+                     
+                        
+                      <div class="form-group">
+                          <label for="name">Name</label>
+                          <div id="error_name"></div>
+                          <input type="text" class="form-control" name="register[name]" placeholder="Enter your full name">
+                      </div>
+                       
+                      <div class="form-group">
+                          <label for="email">Email</label>
+                          <div id="error_email"></div>
+                          <input type="email" class="form-control" name="register[email]" placeholder="Enter your email">
+                      </div>
+                       
+                       
+                      <div class="form-group">
+                          <label for="username">Username</label>
+                          <div id="error_username"></div>
+                          <input type="text" class="form-control" name="register[username]" placeholder="Create your username">
+                       </div>
+
+
+                      <div class="form-group">
+                          <label for="username">Password</label>
+                          <div id="error_password"></div>
+                          <input type="password" class="form-control" name="register[password]" placeholder="Create a password">
+                      </div>
+
+                      <div class="form-group">
+                          <button class="btn btn-primary" id="register">Register Now!</button>   
+                      </div> 
+                 </div>  
+           </form>
+           
+           <div id="registerBtnContainer">
+                <p>No account? Sign up for free!</p>
+                <span><button id="registerBtn" class="btn btn-outline-primary">Register</button></span>
+           </div>
+           
+           <div id="loginBtnContainer">
+                <p>Already signed up? Login now</p>
+               <span><button id="loginBtn" class="btn btn-outline-primary">Login</button></span>
+           </div>
+           <div>
+                <span>Forgot Username?</span> <span>Forgot Password?</span>
+           </div>
+           <br />
+       </div>
+   </div>
+</div>
+   
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="/scripts.js" type="text/javascript"></script>
+
 </body>
 </html>

@@ -1,0 +1,13 @@
+body {
+    background-color: antiquewhite;
+    float: right;
+    padding: auto;
+    margin-bottom: 0cm;
+    background: fixed;
+    text-decoration: none;
+    border: 10px solid yellow;
+    height: 30px;
+    width: fit-content;
+    vertical-align: bottom;
+    cursor: all-scroll;
+}

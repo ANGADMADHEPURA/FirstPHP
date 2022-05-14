@@ -26,6 +26,7 @@ class Fruit {
   $apple = new Fruit("Apple", "red");
           ?>
           <h1>This is a destructor example of PHP</h1>
+          <h2>Welcome to the future my account</h1>
 
 </body>
 </html>

@@ -12,7 +12,7 @@
     Age: <input type="text" name="age" />
     <input type="submit" />
         </form>
-    <?php
+    <?php 
     if(isset($_GET["name"])  || isset($_GET["age"]))  {
         echo "HEllO" . $_GET ['name']. "<br/>";
         echo "Your age is " . $_GET['age']. "years";

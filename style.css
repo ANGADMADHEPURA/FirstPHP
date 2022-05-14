@@ -1,13 +1,27 @@
+/* SET OUR WIDTH AND HIGHT TO 100% FOR HTML AND BODY */
+html,
 body {
-    background-color: antiquewhite;
-    float: right;
-    padding: auto;
-    margin-bottom: 0cm;
-    background: fixed;
-    text-decoration: none;
-    border: 10px solid yellow;
-    height: 30px;
-    width: fit-content;
-    vertical-align: bottom;
-    cursor: all-scroll;
+    width:100%;
+    height:100%;
+}
+
+/* SET BACKGROUND TO OUR IMAGE. */
+body {
+    background-image: url(bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+/* SET BACKGROUND TO OUR FORM WITH A DROP SHADOW AND SET OUR COLOR TO WHITE OUR BACKGROUND USES AN ALPHA CHANNEL HEX CODE TO GIVE US OPACITY.*/
+#form {
+    background:#18184c73;  /*CAN ALSO USE RGBA. EXAMPLE: background: rgba(24, 24, 76, .45); */
+    box-shadow:0px 5px 23px 0px #eae3e3;
+    color:#fff;
+   
+}
+
+#formContainer {
+    margin-top:100px;
+    text-align: center;
 }

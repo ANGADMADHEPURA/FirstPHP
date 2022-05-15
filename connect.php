@@ -7,9 +7,9 @@
          $phone= $_POST['phone'];
          $bgroup= $_POST['bgroup'];
 
-         $sql= "INSERT INTO 'firstconnectdatabasetophp' ('name', 'email', 'phone', 'bgroup') VALUES ('$name', '$email', '$phone', '$bgroup') ";
+         $sql= "INSERT INTO 'user' ('name', 'email', 'phone', 'bgroup') VALUES ('$name', '$email', '$phone', '$bgroup')";
 
-         $query = mysqli_query($conn, $sql);
+         $query  = mysqli_query($conn, $sql);
          if($query) {
              echo 'Entry successfull';
          }

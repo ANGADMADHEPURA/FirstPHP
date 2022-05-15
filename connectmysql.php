@@ -7,8 +7,7 @@
     <title>Registration Form/Login </title>
 </head>
 <h1>Blood Donation Camp in Delhi </h1>
-<body bgcolor="fbb917">
-    <h1>Blood Donation Camp in Delhi</h1>
+<body bgcolor="33C4FF">
     <div><h2>Registration From</h2></div>
     <form action="connect.php" method="POST">
         <label for="user">Name:</label><br>
@@ -18,7 +17,7 @@
         <label for="email">Email:</label><br>
         <input type="email" name="email" id="email" required /> <br> <br>
 
-         <label for="phone">Phone number:"</label>
+         <label for="phone">Phone number:</label> <br>
          <input type="text" name="phone" id="phone" required /> <br> <br>
 
          <label for="bgroup">Blood Group:</label><br>

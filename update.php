@@ -56,7 +56,7 @@
                     <br>
                     Gender: <br>
                     <input type="radio" name="gender" value="Male" <?php if($gender == 'Male'){ echo "checked";} ?> >Male
-                    <input type="radio" name="gender" value="Female">Female
+                    <input type="radio" name="gender" value="Female" <?php if($gender == 'Female') {  echo "checked";} ?> >Female
                     <br><br>
                     <input type="submit" name="submit" value="submit">
                 </fieldset>

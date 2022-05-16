@@ -47,7 +47,7 @@
                     <input type="hidden" name="user_id" value="<?php echo $id; ?>">
                     <br>
                     Last Name: <br>
-                    <input type="text" name="lastname">
+                    <input type="text" name="lastname" value="<?php echo $lastname; ?>">
                     <br>
                     Password: <br>
                     <input type="password" name="password">

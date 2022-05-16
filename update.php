@@ -38,6 +38,8 @@
                      $id = $row['id'];
                  }
                  ?>
+                 <html>
+                 <body>
                  <h2>User Update Form</h2>
                  <form action="" method="POST">
                  <fieldset>
@@ -61,5 +63,15 @@
                     <input type="submit" name="update" value="update">
                 </fieldset>
                  </form>
+
+                 </body>
+                 </html>
+
+                 <?php
+
+             }
+             else {
+                 // if the 'id' is not valid, redirect the user back to  view.php page
+                 header('Location: view.php');
              }
          }

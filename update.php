@@ -55,7 +55,7 @@
                     <input type="password" name="password" value="<?php echo $password; ?>">
                     <br>
                     Gender: <br>
-                    <input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Male" <?php if($gender == 'Male'){ echo "checked";} ?> >Male
                     <input type="radio" name="gender" value="Female">Female
                     <br><br>
                     <input type="submit" name="submit" value="submit">

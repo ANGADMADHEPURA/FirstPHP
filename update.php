@@ -28,5 +28,19 @@
 
              $result = $conn->query($sql);
 
-             if
+             if($result->num_rows > 0) {
+                 while($result->fetch_assoc()) {
+                     $first_name = $row['firstname'];
+                     $lastname = $row['lastname'];
+                     $email = $row['email'];
+                     $password = $row['password'];
+                     $gender = $row['gender'];
+                     $id = $row['id'];
+                 }
+                 ?>
+                 <h2>User Update Form</h2>
+                 <form action="" method="POST">
+                     
+                 </form>
+             }
          }

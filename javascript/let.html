@@ -1,0 +1,30 @@
+<!doctype html>
+	<head>
+		<style>
+			/* CSS comes here */
+			
+		</style>
+		<title>Let Statement</title>
+	</head>
+	<body>
+            <h2>Understand use of let in JavaScript</h2>
+		<script>
+			// global scope
+            let x = 200
+            
+            // block scope
+            {
+                let x = 10
+                document.write("<br>Inside the block: "+x)
+            }
+            
+            // function scope
+            function show() {
+                let x = 20;  
+                document.write("<br>Inside the function: "+x)
+            }
+            show();
+            document.write("<br>Global x: "+x)
+		</script>
+	</body>
+</html>

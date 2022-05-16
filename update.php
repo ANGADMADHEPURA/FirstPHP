@@ -52,7 +52,7 @@
                     Email: <br>
                     <input type="email" name="email" value="<?php echo $email; ?>">
                     Password: <br>
-                    <input type="password" name="password">
+                    <input type="password" name="password" value="<?php echo $password; ?>">
                     <br>
                     Gender: <br>
                     <input type="radio" name="gender" value="Male">Male

@@ -40,7 +40,23 @@
                  ?>
                  <h2>User Update Form</h2>
                  <form action="" method="POST">
-                     
+                 <fieldset>
+                    <legend>Personal Information</legend>
+                    First Name: <br>
+                    <input type="text" name="firstname">
+                    <br>
+                    Last Name: <br>
+                    <input type="text" name="lastname">
+                    <br>
+                    Password: <br>
+                    <input type="password" name="password">
+                    <br>
+                    Gender: <br>
+                    <input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                    <br><br>
+                    <input type="submit" name="submit" value="submit">
+                </fieldset>
                  </form>
              }
          }

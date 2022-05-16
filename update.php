@@ -75,3 +75,4 @@
                  header('Location: view.php');
              }
          }
+         ?>

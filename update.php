@@ -43,7 +43,8 @@
                  <fieldset>
                     <legend>Personal Information</legend>
                     First Name: <br>
-                    <input type="text" name="firstname">
+                    <input type="text" name="firstname" value="<?php echo $first_name; ?>">
+                    <input type="hidden" name="user_id" value="<?php echo $id; ?>">
                     <br>
                     Last Name: <br>
                     <input type="text" name="lastname">

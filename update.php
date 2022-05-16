@@ -49,6 +49,8 @@
                     Last Name: <br>
                     <input type="text" name="lastname" value="<?php echo $lastname; ?>">
                     <br>
+                    Email: <br>
+                    <input type="email" name="email" value="<?php echo $email; ?>">
                     Password: <br>
                     <input type="password" name="password">
                     <br>

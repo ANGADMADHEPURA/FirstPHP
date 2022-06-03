@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+.button {
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    margin: 150px 150px 55px 150px;
+    text-decoration: none;
+    padding: 20px 50px;
+    border: 2px outset #093acc;
+    border-radius: 12px;
+}
+
+.button:hover {
+    animation: pulsate 3s ease-in-out;
+
+}
+
+@-webkit-keyframes pulsate {
+    50% {
+        box-shadow: 
+        0 0 25px #51c2d4,
+        0 0 50px   #4e00c2,
+        0 0 75px #5118a644;
+    }
+}

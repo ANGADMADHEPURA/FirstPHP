@@ -1,0 +1,50 @@
+
+body {
+    background-color: silver;
+}
+
+#first {
+    border: 16px solid rgb(146, 160, 167);
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    width: 100px;
+    height: 100px;
+}
+
+#second {
+    border: 16px solid rgb(146, 160, 167);
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    width: 120px;
+    height: 120px;
+}
+
+#third {
+    border: 16px solid rgb(146, 160, 167);
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-left: yellow;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.loading {
+    border: 16px solid rgb(146, 160, 167);;;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    width: 180px;
+    height: 160px;
+    border-bottom: 16px solid red;
+    border-left: 16px solid black;
+    display: inline-block;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}

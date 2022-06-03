@@ -1,0 +1,32 @@
+body {
+    background-image: url(/image/background.jpg);
+}
+
+.navbar {
+    width: 100%;
+    background-color: #13F0D7;
+    overflow: auto;
+}
+
+.navbar a {
+    float: left;
+    text-align: center;
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.navbar .right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: blue;
+    color: wheat;
+
+}
+
+.active {
+    background-color: green;
+}

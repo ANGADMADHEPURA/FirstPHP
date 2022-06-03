@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+                                     <!-- Easy To Learn Web Dev -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp Login Form</title>
+    <!-- add css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- add javascript -->
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <button onclick="document.getElementById('clicked').style.display='block'" style="width: 100%;">Go To Login Page</button>
+     <div class="modal" id="clicked">
+         <form action="" class="model-content animate">
+             <div class="imgcontainer">
+                 <span onclick="document.getElementById('clicked').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="./images/login-profile-card.png" alt="pcard" class="pcard">
+
+             </div>
+             <div class="container">
+                 <label for="name"><b>Name</b></label>
+                 <input type="text" name="name" id="name" placeholder="Enter username & Phone" required>
+                 <label for="psw"><b>Password</b></label>
+                 <input type="password" name="psw" id="psw" placeholder="Enter password">
+                 <label for="tick">
+                     <input type="checkbox" name="tick" id="tick">
+                     Remember me
+                 </label>
+                 <label for="">
+                     <a href="#" id="forget">Forget Password</a>
+                 </label>
+                 <button type="submit">Login</button>
+
+             </div>
+         </form>
+
+     </div>
+</body>
+</html>

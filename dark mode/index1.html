@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark mode on/off</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script> -->
+</head>
+<body>
+      <nav>
+        <ul>
+         <li><a href="#">Company name</a></li>
+          <li>Home</li>
+          <li>Services</li>
+          <li>Contact</li>
+          <li>Login</li>
+          <li>
+            <div>
+                Dark mode:			
+                <span class="change">OFF</span>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    <script>
+		$( ".change" ).on("click", function() {
+			if( $( "body" ).hasClass( "dark" )) {
+				$( "body" ).removeClass( "dark" );
+				$( ".change" ).text( "OFF" );
+			} else {
+				$( "body" ).addClass( "dark" );
+				$( ".change" ).text( "ON" );
+			}
+		});
+	</script>
+	
+	
+  </body>
+</html>

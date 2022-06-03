@@ -1,0 +1,30 @@
+body {
+  margin: 100px auto;
+  background-color: royalblue;
+  font-size: 50px;
+  margin-left: 10%;
+}
+
+input {
+  margin: 0 auto;
+  font-size: 80px;
+  cursor: pointer;
+}
+
+input:hover {
+  background-color: rgb(31, 179, 97);
+  color: white;
+}
+
+label {
+  display: flex;
+  color: white;
+}
+
+select {
+  margin-top: 18px;
+  font-size: 80px;
+  width: 40%;
+  cursor:not-allowed;
+
+}
